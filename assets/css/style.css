@@ -1,0 +1,92 @@
+body{
+  background-color: #edf0f1;
+}
+
+/*header*/
+header{
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background: #69b7ce;
+}
+
+header input{
+  width: 80%;
+  color: white;
+  font-size: 15px;
+  text-indent: 18px;
+  background: rgba(225,225,225, .2);
+  border-radius: 25px;
+  border: none;
+}
+
+header input::-webkit-input-placeholder{
+  color: rgba(225,225,225, 0.75);
+}
+
+header i{
+  color: #fff;
+  cursor: pointer;
+}
+
+header i:hover{
+  opacity:  .6;
+}
+
+/*headerここまで*/
+
+.container{
+  padding: 15px;
+}
+
+.title{
+  margin: 15px 0;
+  padding-left: 3%;
+  color: #777;
+}
+
+/*todo一覧*/
+.list li {
+  font-size: 14px;
+  color: #444;
+  line-height: 22px;
+  background-color: #fff;
+  border-radius: 5px;
+  position:relative;
+  margin-bottom: 10px;
+  padding: 14px 100px 14px 14px;
+  height: 50px;
+}
+
+
+/*完了済み一覧*/
+
+#not-yet:empty:after{
+  content:'you have nothing to do!';
+}
+
+#done:empty:after{
+  content:'you have yet to complete any tasks!';
+}
+
+ul.list#not-yet:after,
+ul.list#done:after{
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
