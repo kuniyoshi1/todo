@@ -59,6 +59,49 @@ header i:hover{
 }
 
 
+.list li:last-child{
+  margin-bottom: 0;
+}
+
+/*listの右側のボタン達*/
+.list li .buttons{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.list li .buttons button{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+/*ボタンとボタンの境界線*/
+.done:before{
+  content: '';
+  width: 1px;
+  height: 30px;
+  background-color: #edf0f1;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.list .remove{
+  color: #f00;
+}
+
+.list .done{
+  color: #69b7ce;
+}
+
+
+
+
 /*完了済み一覧*/
 
 #not-yet:empty:after{
