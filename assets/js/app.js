@@ -58,7 +58,11 @@ function addTask(value){
   
   //データ(valueの中身)を配列に格納
   data.task.push(value);
+  
   addTaskToDOM(value);
+  
+  //入力フォームを空にする
+  document.getElementById('task').value = '';
   
   //ローカルストレージのアップデート
   dataObjectUpdated();
